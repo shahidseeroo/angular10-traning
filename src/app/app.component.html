@@ -4,17 +4,19 @@
 </p>
 
 <app-first-component></app-first-component>
-<add-user></add-user>
+<!-- <add-user></add-user> -->
 
   <input type="text" #box [disabled]="boxdisabled" >
 <br/><br/>
-<button (click)="enableDisable()">enable/disalbe</button>
+<button (click)="enableDisable()">enable/disable</button>
 <button (click)="showVal(box.value)">show value</button>
 <br/><br/>
 
 <input type="text"  [disabled]="boxdisabled" *ngIf="boxtype=='text' else  numberblock">
 <ng-template #numberblock>
-  <input type="number"  [disabled]="boxdisabled" >
+  <input type="number"  [disabled]="boxdisabled">
 </ng-template>
 <br/>
 <button (click)="changeType()">{{boxtypetext}}</button>
+<hr/>
+<app-for-loop></app-for-loop>
