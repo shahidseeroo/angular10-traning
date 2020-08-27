@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { FirstComponentComponent } from './first-component/first-component.component';
 import { SecondComponent } from './second/second.component';
+import {UserModule} from './user/user.module'
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
