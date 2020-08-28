@@ -1,0 +1,12 @@
+<p>
+form works!
+</p>
+
+<form #sampleForm="ngForm" (ngSubmit)="getFormval(sampleForm.value)">
+  <input type="text" ngModel name="name"> <br/>
+  <input type="text" ngModel name="age"><br/>
+  <input type="submit">
+</form>
+values are:
+{{values.name}} 
+{{values.age}}

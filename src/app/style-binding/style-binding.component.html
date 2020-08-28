@@ -1,0 +1,9 @@
+<p [style.color]="colorvar">
+style-binding works!
+</p>
+  <input type="text" #box value="{{colorvar}}" >
+  <button (click)="changeColor(box.value)">Change color</button>
+
+  <p [style.color]="colorvar=='black' ? 'red':'black'">
+conditional
+</p>
