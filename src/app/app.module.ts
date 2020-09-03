@@ -9,11 +9,13 @@ import { SecondComponent } from './second/second.component';
 import {UserModule} from './user/user.module';
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
-import { FormComponent } from './form/form.component'
+import { FormComponent } from './form/form.component';
+import { BootstrapExampleComponent } from './bootstrap-example/bootstrap-example.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, FirstComponentComponent, SecondComponent, ForLoopComponent, StyleBindingComponent, FormComponent],
+  imports:      [ BrowserModule, FormsModule, NgbModule ],
+  declarations: [ AppComponent, HelloComponent, FirstComponentComponent, SecondComponent, ForLoopComponent, StyleBindingComponent, FormComponent, BootstrapExampleComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
