@@ -2,9 +2,9 @@
 
 
 <hr>
-<app-data-passing [passingdata]="passingname"></app-data-passing>
+<app-data-passing [passingdata]="passingname" (parentFunctionInChild)="parentFunctionInApp($event)"></app-data-passing>
 <br/>data from child : 
-{{datafromchild.name}}
+{{datafromchild.name}} {{datafromchild.type}}
 <hr>
 
 <app-bootstrap-example></app-bootstrap-example>

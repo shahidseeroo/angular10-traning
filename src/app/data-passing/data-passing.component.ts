@@ -8,7 +8,7 @@ import { Component, OnInit ,Input, Output, EventEmitter} from '@angular/core';
 export class DataPassingComponent implements OnInit {
 
   @Input() passingdata;
-  @Output() parentFunction :EventEmitter<any>=new EventEmitter()
+  @Output() parentFunctionInChild :EventEmitter<any>=new EventEmitter()
 
   constructor() { }
 
@@ -18,7 +18,7 @@ export class DataPassingComponent implements OnInit {
 
   sendData(){
     let obj={name:'Dhoni',type:'WK'}
-    this.parentFunction.emit(obj);
+    this.parentFunctionInChild.emit(obj);
   }
 
 }

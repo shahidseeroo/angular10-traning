@@ -34,7 +34,7 @@ export class AppComponent  {
   passingname="shahid";
   datafromchild = "";
 
-  parentFunction(data){
+  parentFunctionInApp(data){
     console.warn(data);
     this.datafromchild=data;
   }
