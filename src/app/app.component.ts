@@ -31,5 +31,13 @@ export class AppComponent  {
     }
   }
 
+  passingname="shahid";
+  datafromchild = "";
+
+  parentFunction(data){
+    console.warn(data);
+    this.datafromchild=data;
+  }
+
 
 }

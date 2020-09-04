@@ -12,10 +12,11 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { FormComponent } from './form/form.component';
 import { BootstrapExampleComponent } from './bootstrap-example/bootstrap-example.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DataPassingComponent } from './data-passing/data-passing.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, NgbModule ],
-  declarations: [ AppComponent, HelloComponent, FirstComponentComponent, SecondComponent, ForLoopComponent, StyleBindingComponent, FormComponent, BootstrapExampleComponent],
+  declarations: [ AppComponent, HelloComponent, FirstComponentComponent, SecondComponent, ForLoopComponent, StyleBindingComponent, FormComponent, BootstrapExampleComponent, DataPassingComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
